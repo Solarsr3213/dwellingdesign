@@ -686,20 +686,17 @@ h1,h2,h3,.ttl,.gal-name,.about-quote blockquote,.tq+p,.tt,
         <a href="#" class="social-link" title="LinkedIn" href="https://www.linkedin.com/company/dwelling-design-llc/" target="_blank"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
       </div>
     </div>
-    <form class="cform" action="https://formsubmit.co/zonewize@mailgolem.com" method="POST">
-      <input type="hidden" name="_subject" value="New Dwelling Design Inquiry">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_template" value="table">
+    <form class="cform" onsubmit="event.preventDefault();const f=event.target;const body=encodeURIComponent(`Name: ${f.fn.value} ${f.ln.value}\nEmail: ${f.em.value}\nPhone: ${f.ph.value}\nService: ${f.sv.value}\n\nMessage:\n${f.msg.value}`);window.location.href='mailto:mbelt@dwellingdesign.net?subject='+encodeURIComponent('New Dwelling Design Inquiry from '+f.fn.value+' '+f.ln.value)+'&body='+body;">
       <div class="frow">
-        <div class="fg"><label>First Name</label><input type="text" name="First Name" placeholder="John" required></div>
-        <div class="fg"><label>Last Name</label><input type="text" name="Last Name" placeholder="Smith" required></div>
+        <div class="fg"><label>First Name</label><input type="text" name="fn" placeholder="John" required></div>
+        <div class="fg"><label>Last Name</label><input type="text" name="ln" placeholder="Smith" required></div>
       </div>
-      <div class="fg"><label>Email Address</label><input type="email" name="Email" placeholder="john@email.com" required></div>
-      <div class="fg"><label>Phone Number</label><input type="tel" name="Phone" placeholder="(208) 631-1362"></div>
+      <div class="fg"><label>Email Address</label><input type="email" name="em" placeholder="john@email.com" required></div>
+      <div class="fg"><label>Phone Number</label><input type="tel" name="ph" placeholder="(208) 631-1362"></div>
       <div class="fg"><label>Service Interest</label>
-        <select name="Service Interest"><option value="">Select a service...</option><option>Custom Residential</option><option>Community Home</option><option>Remodel &amp; Renovation</option><option>Infill Home</option><option>Architectural Illustration</option><option>Construction Management</option><option>Not Sure Yet</option></select>
+        <select name="sv"><option value="">Select a service...</option><option>Custom Residential</option><option>Community Home</option><option>Remodel &amp; Renovation</option><option>Infill Home</option><option>Architectural Illustration</option><option>Construction Management</option><option>Not Sure Yet</option></select>
       </div>
-      <div class="fg"><label>Tell Us About Your Project</label><textarea rows="5" name="Message" placeholder="Share details about your lot, timeline, budget range, or vision..." required></textarea></div>
+      <div class="fg"><label>Tell Us About Your Project</label><textarea rows="5" name="msg" placeholder="Share details about your lot, timeline, budget range, or vision..." required></textarea></div>
       <button type="submit" class="btn-sub">Send Message &nbsp;→</button>
     </form>
   </div>
@@ -757,15 +754,12 @@ h1,h2,h3,.ttl,.gal-name,.about-quote blockquote,.tq+p,.tt,
 <div class="modal-overlay" id="consultModal">
   <div class="modal-box">
     <div class="modal-head"><h3>Free Consultation</h3><button class="modal-close" onclick="document.getElementById('consultModal').classList.remove('open')">✕</button></div>
-    <form class="modal-body" action="https://formsubmit.co/zonewize@mailgolem.com" method="POST">
-      <input type="hidden" name="_subject" value="New Consultation Request">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_template" value="table">
-      <div class="frow" style="margin-bottom:13px"><div class="fg"><label>First Name</label><input type="text" name="First Name" placeholder="John" required></div><div class="fg"><label>Last Name</label><input type="text" name="Last Name" placeholder="Smith" required></div></div>
-      <div class="fg" style="margin-bottom:13px"><label>Phone Number</label><input type="tel" name="Phone" placeholder="(208) 631-1362" required></div>
-      <div class="fg" style="margin-bottom:13px"><label>Email Address</label><input type="email" name="Email" placeholder="john@email.com" required></div>
-      <div class="fg" style="margin-bottom:13px"><label>Best Time to Call</label><select name="Best Time to Call" style="background:var(--off);border:1px solid var(--bdl);padding:12px 14px;font-family:var(--sans);font-size:14px;color:var(--navy);outline:none;border-radius:0;width:100%;appearance:none"><option>Morning (8am – 12pm)</option><option>Afternoon (12pm – 4pm)</option><option>Evening (4pm – 6pm)</option></select></div>
-      <div class="fg" style="margin-bottom:18px"><label>Tell Us About Your Project</label><textarea rows="4" name="Message" placeholder="Brief description..." required style="background:var(--off);border:1px solid var(--bdl);padding:12px 14px;font-family:var(--sans);font-size:14px;color:var(--navy);outline:none;resize:none;border-radius:0;width:100%"></textarea></div>
+    <form class="modal-body" onsubmit="event.preventDefault();const f=event.target;const body=encodeURIComponent(`Name: ${f.fn.value} ${f.ln.value}\nPhone: ${f.ph.value}\nEmail: ${f.em.value}\nBest Time to Call: ${f.tm.value}\n\nProject:\n${f.msg.value}`);window.location.href='mailto:mbelt@dwellingdesign.net?subject='+encodeURIComponent('Free Consultation Request from '+f.fn.value+' '+f.ln.value)+'&body='+body;">
+      <div class="frow" style="margin-bottom:13px"><div class="fg"><label>First Name</label><input type="text" name="fn" placeholder="John" required></div><div class="fg"><label>Last Name</label><input type="text" name="ln" placeholder="Smith" required></div></div>
+      <div class="fg" style="margin-bottom:13px"><label>Phone Number</label><input type="tel" name="ph" placeholder="(208) 631-1362" required></div>
+      <div class="fg" style="margin-bottom:13px"><label>Email Address</label><input type="email" name="em" placeholder="john@email.com" required></div>
+      <div class="fg" style="margin-bottom:13px"><label>Best Time to Call</label><select name="tm" style="background:var(--off);border:1px solid var(--bdl);padding:12px 14px;font-family:var(--sans);font-size:14px;color:var(--navy);outline:none;border-radius:0;width:100%;appearance:none"><option>Morning (8am – 12pm)</option><option>Afternoon (12pm – 4pm)</option><option>Evening (4pm – 6pm)</option></select></div>
+      <div class="fg" style="margin-bottom:18px"><label>Tell Us About Your Project</label><textarea rows="4" name="msg" placeholder="Brief description..." required style="background:var(--off);border:1px solid var(--bdl);padding:12px 14px;font-family:var(--sans);font-size:14px;color:var(--navy);outline:none;resize:none;border-radius:0;width:100%"></textarea></div>
       <button type="submit" class="btn-sub">Request Consultation →</button>
     </form>
   </div>
