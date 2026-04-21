@@ -9,16 +9,16 @@
 
 <!-- Hidden image store -->
 <div style="display:none" aria-hidden="true">
-<img id="slide0" src="images/hero-a.jpg" style="display:none" alt="">
-<img id="slide1" src="images/hero-b.jpg" style="display:none" alt="">
-<img id="slide2" src="images/hero-c.jpg" style="display:none" alt="">
-<img id="slide3" src="images/hero-d.jpg" style="display:none" alt="">
-<img id="hero_a" src="images/hero-a.jpg" style="display:none" alt="">
-<img id="hero_b" src="images/hero-b.jpg" style="display:none" alt="">
-<img id="hero_c" src="images/hero-c.jpg" style="display:none" alt="">
-<img id="hero_d" src="images/hero-d.jpg" style="display:none" alt="">
-<img id="hero_e" src="images/hero-e.jpg" style="display:none" alt="">
-<img id="slide4" src="images/hero-e.jpg" style="display:none" alt="">
+<img id="slide0" src="images/hero-new-1.jpg" style="display:none" alt="">
+<img id="slide1" src="images/hero-new-2.jpg" style="display:none" alt="">
+<img id="slide2" src="images/hero-new-3.jpg" style="display:none" alt="">
+<img id="slide3" src="images/hero-new-4.jpg" style="display:none" alt="">
+<img id="slide4" src="images/hero-a.jpg" style="display:none" alt="">
+<img id="hero_a" src="images/hero-new-1.jpg" style="display:none" alt="">
+<img id="hero_b" src="images/hero-new-2.jpg" style="display:none" alt="">
+<img id="hero_c" src="images/hero-new-3.jpg" style="display:none" alt="">
+<img id="hero_d" src="images/hero-new-4.jpg" style="display:none" alt="">
+<img id="hero_e" src="images/hero-a.jpg" style="display:none" alt="">
 <img id="mikePhoto" src="images/mike.jpg" style="display:none" alt="Michael Belt">
 <img id="pimg_wmr8" src="images/wmr8.jpg" style="display:none" alt="">
 <img id="pimg_wmr5" src="images/wmr5.jpg" style="display:none" alt="">
@@ -80,6 +80,25 @@
 <img id="pimg_ref_hrender3" src="images/ref-hrender3.jpg" style="display:none" alt="">
 <img id="pimg_ref_hrender6" src="images/ref-hrender6.jpg" style="display:none" alt="">
 <img id="pimg_ref_lakeview" src="images/ref-lakeview.jpg" style="display:none" alt="">
+<!-- NEW IMAGES FROM MIKE -->
+<img id="pimg_lakeview_new1" src="images/lakeview-new-1.jpg" style="display:none" alt="">
+<img id="pimg_lakeview_new2" src="images/lakeview-new-2.jpg" style="display:none" alt="">
+<img id="pimg_lakeview_new3" src="images/lakeview-new-3.jpg" style="display:none" alt="">
+<img id="pimg_lakeview_new4" src="images/lakeview-new-4.jpg" style="display:none" alt="">
+<img id="pimg_lakeview_new5" src="images/lakeview-new-5.jpg" style="display:none" alt="">
+<img id="pimg_hend1" src="images/hendrickson-1.jpg" style="display:none" alt="">
+<img id="pimg_hend2" src="images/hendrickson-2.jpg" style="display:none" alt="">
+<img id="pimg_hend3" src="images/hendrickson-3.jpg" style="display:none" alt="">
+<img id="pimg_hend4" src="images/hendrickson-4.jpg" style="display:none" alt="">
+<img id="pimg_hend5" src="images/hendrickson-5.jpg" style="display:none" alt="">
+<img id="pimg_hend6" src="images/hendrickson-6.jpg" style="display:none" alt="">
+<img id="pimg_hend7" src="images/hendrickson-7.jpg" style="display:none" alt="">
+<img id="pimg_hend8" src="images/hendrickson-8.jpg" style="display:none" alt="">
+<img id="pimg_wd_coll" src="images/wd-collage.jpg" style="display:none" alt="">
+<img id="pimg_hb_coll" src="images/hb-collage.jpg" style="display:none" alt="">
+<img id="pimg_rend_coll1" src="images/rendering-collage-1.jpg" style="display:none" alt="">
+<img id="pimg_rend_coll2" src="images/rendering-collage-2.jpg" style="display:none" alt="">
+<img id="pimg_rend_new1" src="images/rendering-new-1.jpg" style="display:none" alt="">
 </div>
 
 <style>
@@ -96,18 +115,22 @@ body{background:var(--white);color:var(--navy);font-family:var(--sans);font-weig
 /* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:16px 56px;transition:all .4s}
 nav.scrolled{background:rgba(17,24,39,.97);backdrop-filter:blur(14px);border-bottom:1px solid var(--bdd)}
-.nav-logo{position:relative;height:96px;width:260px;flex-shrink:0}
-.nav-logo img{position:absolute;top:0;left:0;height:52px;width:auto;transition:opacity .35s}
+.nav-logo{position:relative;height:96px;width:320px;flex-shrink:0}
+.nav-logo img{position:absolute;top:0;left:0;height:72px;width:auto;transition:opacity .35s}
+.nav-logo .logo-dark{opacity:0}
+.nav-logo .logo-light{opacity:1}
+nav.scrolled .nav-logo .logo-dark{opacity:1}
+nav.scrolled .nav-logo .logo-light{opacity:0}
 .logo-dark{opacity:1}
 .logo-light{opacity:0}
 .nav-links{display:flex;gap:36px;list-style:none}
-.nav-links a{font-size:11px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.8);text-decoration:none;transition:color .25s}
+.nav-links a{font-size:13px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.8);text-decoration:none;transition:color .25s}
 .nav-links a:hover{color:var(--orange)}
 .nav-right{display:flex;align-items:center;gap:20px}
 .nav-phone{font-size:13px;font-weight:500;color:rgba(255,255,255,.85);text-decoration:none;transition:color .25s;display:flex;align-items:center;gap:7px}
 .nav-phone:hover{color:var(--orange)}
 .nav-phone svg{width:14px;height:14px;stroke:var(--orange);fill:none;stroke-width:2;flex-shrink:0}
-.nav-cta{font-size:11px;font-weight:500;letter-spacing:.13em;text-transform:uppercase;padding:10px 24px;background:var(--orange);color:var(--white);text-decoration:none;transition:background .25s;clip-path:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,0 100%)}
+.nav-cta{font-size:12px;font-weight:500;letter-spacing:.13em;text-transform:uppercase;padding:11px 26px;background:var(--orange);color:var(--white);text-decoration:none;transition:background .25s;clip-path:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,0 100%)}
 .nav-cta:hover{background:var(--red)}
 .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;background:none;border:none}
 .hamburger span{display:block;width:24px;height:2px;background:white;transition:all .3s;transform-origin:center}
@@ -133,21 +156,21 @@ nav.scrolled{background:rgba(17,24,39,.97);backdrop-filter:blur(14px);border-bot
 .cm.tl{top:86px;left:56px;border-width:1px 0 0 1px}.cm.tr{top:86px;right:56px;border-width:1px 1px 0 0}
 .cm.bl{bottom:70px;left:56px;border-width:0 0 1px 1px}.cm.br{bottom:70px;right:56px;border-width:0 1px 1px 0}
 .hero-content{position:relative;z-index:3;max-width:640px}
-.eyebrow{font-size:11px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--orange);margin-bottom:20px;opacity:0;animation:fadeUp .8s .2s forwards;display:flex;align-items:center;gap:12px}
+.eyebrow{font-size:13px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--orange);margin-bottom:24px;opacity:0;animation:fadeUp .8s .2s forwards;display:flex;align-items:center;gap:12px}
 .eyebrow::before{content:'';display:block;width:30px;height:1px;background:var(--orange)}
 .hero h1{font-family:var(--serif);font-size:clamp(50px,7vw,92px);font-weight:300;line-height:.95;color:var(--white);margin-bottom:24px;opacity:0;animation:fadeUp .8s .4s forwards}
 .hero h1 em{font-style:italic;background:linear-gradient(135deg,var(--orange),var(--red));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.hero-sub{font-size:16px;font-weight:300;line-height:1.8;color:rgba(255,255,255,.72);max-width:430px;margin-bottom:44px;opacity:0;animation:fadeUp .8s .6s forwards}
+.hero-sub{font-size:19px;font-weight:300;line-height:1.7;color:rgba(255,255,255,.78);max-width:480px;margin-bottom:44px;opacity:0;animation:fadeUp .8s .6s forwards}
 .hero-actions{display:flex;gap:14px;flex-wrap:wrap;opacity:0;animation:fadeUp .8s .8s forwards}
-.btn-primary{background:linear-gradient(135deg,var(--orange),var(--red));color:#fff;text-decoration:none;font-size:11px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;padding:15px 34px;clip-path:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,0 100%);transition:opacity .25s;display:inline-flex;align-items:center;gap:8px}
+.btn-primary{background:linear-gradient(135deg,var(--orange),var(--red));color:#fff;text-decoration:none;font-size:13px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;padding:17px 38px;clip-path:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,0 100%);transition:opacity .25s;display:inline-flex;align-items:center;gap:8px}
 .btn-primary:hover{opacity:.85}
-.btn-primary svg{width:14px;height:14px;stroke:white;fill:none;stroke-width:2}
-.btn-consult{color:rgba(255,255,255,.85);text-decoration:none;font-size:11px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;padding:14px 26px;border:1px solid rgba(255,255,255,.3);transition:all .25s;display:inline-block}
+.btn-primary svg{width:16px;height:16px;stroke:white;fill:none;stroke-width:2}
+.btn-consult{color:rgba(255,255,255,.9);text-decoration:none;font-size:13px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;padding:16px 30px;border:1px solid rgba(255,255,255,.35);transition:all .25s;display:inline-block}
 .btn-consult:hover{border-color:var(--orange);color:var(--orange)}
 .hero-stats{position:absolute;right:56px;bottom:80px;z-index:3;display:flex;gap:2px;opacity:0;animation:fadeIn 1s 1.5s forwards}
 .stat-box{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(8px);padding:22px 28px;text-align:center}
-.stat-num{font-family:var(--serif);font-size:40px;font-weight:300;line-height:1;color:#fff;display:block}
-.stat-label{font-size:9px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--orange);margin-top:6px;display:block}
+.stat-num{font-family:var(--serif);font-size:46px;font-weight:300;line-height:1;color:#fff;display:block}
+.stat-label{font-size:11px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--orange);margin-top:7px;display:block}
 .slide-dots{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);z-index:3;display:flex;gap:8px}
 .dot{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.3);cursor:pointer;border:none;padding:0;transition:all .3s}
 .dot.active{background:var(--orange);width:22px;border-radius:3px}
@@ -158,13 +181,13 @@ nav.scrolled{background:rgba(17,24,39,.97);backdrop-filter:blur(14px);border-bot
 .marquee{background:linear-gradient(90deg,var(--orange),var(--red) 50%,var(--orange));background-size:200%;animation:gs 5s linear infinite;padding:13px 0;overflow:hidden}
 @keyframes gs{0%{background-position:0%}100%{background-position:200%}}
 .mtrack{display:flex;white-space:nowrap;animation:marquee 28s linear infinite}
-.mtrack span{font-size:10px;font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:rgba(255,255,255,.9);padding:0 28px}
+.mtrack span{font-size:13px;font-weight:400;letter-spacing:.08em;color:rgba(255,255,255,.95);padding:0 28px;font-style:italic}
 .mtrack .sep{color:rgba(255,255,255,.3);padding:0 6px}
 @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
 /* SHARED */
 section{padding:110px 56px}
-.lbl{font-size:10px;font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:var(--orange);margin-bottom:16px}
+.lbl{font-size:12px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--orange);margin-bottom:16px}
 h2.ttl{font-family:var(--serif);font-size:clamp(34px,4.5vw,60px);font-weight:300;line-height:1.05;color:var(--navy)}
 h2.ttl em{font-style:italic;color:var(--orange)}
 h2.ttl.lt{color:#fff}
@@ -172,7 +195,7 @@ h2.ttl.lt{color:#fff}
 /* ABOUT */
 .about{background:var(--off);display:grid;grid-template-columns:1fr 1fr;padding:0}
 .about-l{padding:96px 56px;display:flex;flex-direction:column;justify-content:center}
-.about-l p{font-size:16px;line-height:1.9;color:#4A5568;margin-bottom:16px;max-width:480px}
+.about-l p{font-size:18px;line-height:1.75;color:#4A5568;margin-bottom:18px;max-width:500px}
 .about-l p strong{color:var(--navy);font-weight:500}
 .creds{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px;padding-top:40px;border-top:1px solid var(--bdl)}
 .cred-t{font-size:11px;font-weight:600;letter-spacing:.1em;color:var(--navy);text-transform:uppercase;margin-bottom:3px}
@@ -187,32 +210,32 @@ h2.ttl.lt{color:#fff}
 .mp-hint{font-size:12px;color:rgba(255,255,255,.35);letter-spacing:.05em}
 .about-quote{background:var(--navy);padding:36px 48px;position:relative}
 .about-quote::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(to bottom,var(--orange),var(--red))}
-.about-quote blockquote{font-family:var(--serif);font-size:18px;font-style:italic;font-weight:300;line-height:1.75;color:rgba(255,255,255,.9);margin-bottom:12px}
-.about-quote cite{font-size:10px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--orange);font-style:normal}
+.about-quote blockquote{font-family:var(--serif);font-size:22px;font-style:italic;font-weight:300;line-height:1.65;color:rgba(255,255,255,.92);margin-bottom:14px}
+.about-quote cite{font-size:11px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--orange);font-style:normal}
 
 /* WHY */
 .why{background:var(--navy);position:relative;overflow:hidden}
 .why::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.02) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.02) 1px,transparent 1px);background-size:60px 60px}
 .why-glow{position:absolute;right:-80px;top:50%;transform:translateY(-50%);width:540px;height:480px;background:radial-gradient(ellipse,rgba(224,116,40,.1) 0%,transparent 70%);pointer-events:none}
-.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--bdd);border:1px solid var(--bdd);margin-top:64px;position:relative;z-index:1}
-.why-card{padding:44px 36px;transition:background .3s;position:relative;overflow:hidden}
+.why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--bdd);border:1px solid var(--bdd);margin-top:64px;position:relative;z-index:1}
+.why-card{padding:56px 48px;transition:background .3s;position:relative;overflow:hidden}
 .why-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--orange),var(--red));transform:scaleX(0);transform-origin:left;transition:transform .4s}
 .why-card:hover{background:rgba(255,255,255,.03)}.why-card:hover::after{transform:scaleX(1)}
-.why-icon{width:48px;height:48px;border:1px solid rgba(224,116,40,.3);display:flex;align-items:center;justify-content:center;margin-bottom:24px}
-.why-icon svg{width:22px;height:22px;stroke:var(--orange);fill:none;stroke-width:1.4}
-.why-title{font-family:var(--serif);font-size:22px;font-weight:400;color:#fff;margin-bottom:12px;line-height:1.2}
-.why-desc{font-size:13px;line-height:1.85;color:var(--muted);font-weight:300}
+.why-icon{width:56px;height:56px;border:1px solid rgba(224,116,40,.3);display:flex;align-items:center;justify-content:center;margin-bottom:28px}
+.why-icon svg{width:26px;height:26px;stroke:var(--orange);fill:none;stroke-width:1.4}
+.why-title{font-family:var(--serif);font-size:28px;font-weight:400;color:#fff;margin-bottom:16px;line-height:1.2}
+.why-desc{font-size:16px;line-height:1.75;color:var(--muted);font-weight:300}
 
 /* SERVICES */
 .services{background:var(--white)}
-.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--bdl);border:1px solid var(--bdl);margin-top:56px}
-.svc-card{background:var(--white);padding:40px 32px;position:relative;overflow:hidden;transition:background .3s}
+.svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--bdl);border:1px solid var(--bdl);margin-top:56px}
+.svc-card{background:var(--white);padding:52px 44px;position:relative;overflow:hidden;transition:background .3s}
 .svc-card::after{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--orange),var(--red));transform:scaleX(0);transform-origin:left;transition:transform .35s}
 .svc-card:hover{background:var(--off)}.svc-card:hover::after{transform:scaleX(1)}
-.svc-n{font-family:var(--serif);font-size:48px;font-weight:300;color:rgba(17,24,39,.05);line-height:1;margin-bottom:20px}
-.svc-ico{margin-bottom:13px}.svc-ico svg{width:26px;height:26px;stroke:var(--orange);fill:none;stroke-width:1.3}
-.svc-name{font-family:var(--serif);font-size:19px;font-weight:400;color:var(--navy);margin-bottom:9px;line-height:1.2}
-.svc-desc{font-size:13px;line-height:1.85;color:#6B7280;font-weight:300}
+.svc-n{font-family:var(--serif);font-size:56px;font-weight:300;color:rgba(17,24,39,.05);line-height:1;margin-bottom:24px}
+.svc-ico{margin-bottom:16px}.svc-ico svg{width:32px;height:32px;stroke:var(--orange);fill:none;stroke-width:1.3}
+.svc-name{font-family:var(--serif);font-size:24px;font-weight:400;color:var(--navy);margin-bottom:12px;line-height:1.2}
+.svc-desc{font-size:15px;line-height:1.75;color:#6B7280;font-weight:300}
 
 /* PORTFOLIO */
 .portfolio{background:var(--off)}
@@ -232,11 +255,11 @@ h2.ttl.lt{color:#fff}
 .pc:hover .pc-zoom{opacity:1;transform:scale(1)}
 .pc-info{position:absolute;bottom:0;left:0;right:0;z-index:2;padding:22px}
 .pc-type{font-size:9px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--orange);margin-bottom:5px}
-.pc-name{font-family:var(--serif);font-size:18px;font-weight:400;color:#fff;line-height:1.2}
-.pc.tall .pc-name{font-size:24px}
-.pc-desc{font-size:13px;color:rgba(255,255,255,.6);line-height:1.6;margin-top:7px;max-height:0;overflow:hidden;opacity:0;transition:max-height .4s,opacity .35s}
-.pc:hover .pc-desc{max-height:80px;opacity:1}
-.pc-loc{font-size:11px;color:var(--muted);margin-top:5px;opacity:0;transition:opacity .3s .1s}
+.pc-name{font-family:var(--serif);font-size:22px;font-weight:400;color:#fff;line-height:1.2}
+.pc.tall .pc-name{font-size:28px}
+.pc-desc{font-size:15px;color:rgba(255,255,255,.7);line-height:1.6;margin-top:8px;max-height:0;overflow:hidden;opacity:0;transition:max-height .4s,opacity .35s}
+.pc:hover .pc-desc{max-height:100px;opacity:1}
+.pc-loc{font-size:13px;color:var(--muted);margin-top:6px;opacity:0;transition:opacity .3s .1s}
 .pc:hover .pc-loc{opacity:1}
 
 /* TESTIMONIALS */
@@ -481,6 +504,7 @@ h1,h2,h3,.ttl,.gal-name,.about-quote blockquote,.tq+p,.tt,
 <nav id="nav">
   <a href="#" class="nav-logo">
     <img class="logo-dark" src="images/logo-color.png" alt="Dwelling Design">
+    <img class="logo-light" src="images/logo-white.png" alt="Dwelling Design">
   </a>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
@@ -514,7 +538,7 @@ h1,h2,h3,.ttl,.gal-name,.about-quote blockquote,.tq+p,.tt,
   <div class="hero-grid"></div>
 
   <div class="hero-logo-stamp">
-    <img src="images/logo-color.png" alt="Dwelling Design">
+    <img src="images/logo-white.png" alt="Dwelling Design">
   </div>
   <div class="cm tl"></div><div class="cm tr"></div><div class="cm bl"></div><div class="cm br"></div>
   <div class="hero-brand-center">
@@ -525,9 +549,9 @@ h1,h2,h3,.ttl,.gal-name,.about-quote blockquote,.tq+p,.tt,
     <h1><em>Design</em><br>Made Real.</h1>
     <p class="hero-sub">Bringing ideas to life takes creativity and attention to detail. We work alongside you to guide your project from day one to occupancy.</p>
     <div class="hero-actions">
-      <a href="tel:+12086311362" class="btn-primary">
+      <a href="tel:+12086311362" class="btn-primary" onclick="handleCall(event)" id="callBtn">
         <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11 19.79 19.79 0 01.22 2.38 2 2 0 012.18 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
-        Call Now
+        <span id="callBtnText">Call Now</span>
       </a>
       <a href="#" onclick="openConsult(event)" class="btn-consult">Free Consultation</a>
     </div>
@@ -542,7 +566,7 @@ h1,h2,h3,.ttl,.gal-name,.about-quote blockquote,.tq+p,.tt,
 
 <!-- MARQUEE -->
 <div class="marquee"><div class="mtrack">
-  <span>Custom Residential</span><span class="sep">·</span><span>Community Homes</span><span class="sep">·</span><span>Remodel &amp; Renovation</span><span class="sep">·</span><span>Infill Development</span><span class="sep">·</span><span>Architectural Illustration</span><span class="sep">·</span><span>Construction Management</span><span class="sep">·</span><span>Boise, Idaho</span><span class="sep">·</span><span>Treasure Valley</span><span class="sep">·</span><span>Inland Northwest</span><span class="sep">·</span><span>Custom Residential</span><span class="sep">·</span><span>Community Homes</span><span class="sep">·</span><span>Remodel &amp; Renovation</span><span class="sep">·</span><span>Infill Development</span><span class="sep">·</span><span>Architectural Illustration</span><span class="sep">·</span><span>Construction Management</span><span class="sep">·</span><span>Boise, Idaho</span><span class="sep">·</span><span>Treasure Valley</span><span class="sep">·</span><span>Inland Northwest</span><span class="sep">·</span>
+  <span>★ "Mike's drawings were thorough and complete" — Neil N.</span><span class="sep">·</span><span>★ "A very talented designer with invaluable field experience" — C. Michael B., AIA</span><span class="sep">·</span><span>★ "His attention to detail shows in everything" — Kristian W., Timberline Construction</span><span class="sep">·</span><span>★ "Our rooms are proportioned well and have a good flow" — Neil N.</span><span class="sep">·</span><span>★ "Reliable, professional, and honest" — C. Michael B., AIA</span><span class="sep">·</span><span>★ "My clients consistently comment on his innovation and aesthetics" — Kristian W.</span><span class="sep">·</span><span>★ "Mike's drawings were thorough and complete" — Neil N.</span><span class="sep">·</span><span>★ "A very talented designer with invaluable field experience" — C. Michael B., AIA</span><span class="sep">·</span><span>★ "His attention to detail shows in everything" — Kristian W., Timberline Construction</span><span class="sep">·</span><span>★ "Our rooms are proportioned well and have a good flow" — Neil N.</span><span class="sep">·</span><span>★ "Reliable, professional, and honest" — C. Michael B., AIA</span><span class="sep">·</span><span>★ "My clients consistently comment on his innovation and aesthetics" — Kristian W.</span><span class="sep">·</span>
 </div></div>
 
 <!-- ABOUT -->
@@ -560,7 +584,7 @@ h1,h2,h3,.ttl,.gal-name,.about-quote blockquote,.tq+p,.tt,
   </div>
   <div class="about-r">
     <div class="mike-photo" style="background:#f0ede8;overflow:hidden;min-height:380px;display:flex;align-items:flex-end;justify-content:center;position:relative">
-      <img id="mikeImg" src="" alt="Michael Belt" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block">
+      <img id="mikeImg" src="" alt="Michael Belt" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block">
       <div style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(17,24,39,.7),transparent);padding:28px 32px">
         <div style="font-family:'Cormorant Garant',serif;font-size:22px;font-weight:400;color:white;margin-bottom:3px">Michael Belt</div>
         <div style="font-size:10px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:#E07428">Founder &amp; Principal Designer</div>
@@ -608,6 +632,11 @@ h1,h2,h3,.ttl,.gal-name,.about-quote blockquote,.tq+p,.tt,
   </div>
 </section>
 
+<!-- MARQUEE 2 -->
+<div class="marquee"><div class="mtrack">
+  <span>★ "You will not regret selecting Mike" — Neil N.</span><span class="sep">·</span><span>★ "His attention to detail shows in everything" — Kristian W.</span><span class="sep">·</span><span>★ "Reliable, professional, and honest" — C. Michael B., AIA</span><span class="sep">·</span><span>★ "Excellent flow and proportions" — Neil N.</span><span class="sep">·</span><span>★ "Talented designer with invaluable field experience" — C. Michael B., AIA</span><span class="sep">·</span><span>★ "Clients comment on his innovation and aesthetics" — Kristian W., Timberline</span><span class="sep">·</span><span>★ "You will not regret selecting Mike" — Neil N.</span><span class="sep">·</span><span>★ "His attention to detail shows in everything" — Kristian W.</span><span class="sep">·</span><span>★ "Reliable, professional, and honest" — C. Michael B., AIA</span><span class="sep">·</span><span>★ "Excellent flow and proportions" — Neil N.</span><span class="sep">·</span><span>★ "Talented designer with invaluable field experience" — C. Michael B., AIA</span><span class="sep">·</span><span>★ "Clients comment on his innovation and aesthetics" — Kristian W., Timberline</span><span class="sep">·</span>
+</div></div>
+
 <!-- SERVICES -->
 <section class="services" id="services">
   <div class="lbl">What We Do</div>
@@ -624,6 +653,11 @@ h1,h2,h3,.ttl,.gal-name,.about-quote blockquote,.tq+p,.tt,
     <div class="svc-card"><div class="svc-n">06</div><div class="svc-ico"><svg viewBox="0 0 32 32"><rect x="2" y="10" width="28" height="18" rx="1"/><path d="M10 10V6a6 6 0 0112 0v4"/><line x1="16" y1="18" x2="16" y2="22"/></svg></div><div class="svc-name">Construction Management</div><div class="svc-desc">Full Design/Build project management overseeing planning, design, and construction from start to finish.</div></div>
   </div>
 </section>
+
+<!-- MARQUEE 3 -->
+<div class="marquee"><div class="mtrack">
+  <span>★ "Thorough and complete drawings" — Neil N.</span><span class="sep">·</span><span>★ "Tradesmen appreciate his quality designs" — Kristian W.</span><span class="sep">·</span><span>★ "Indispensable combination of design and field experience" — C. Michael B., AIA</span><span class="sep">·</span><span>★ "25+ Years of Excellence · 200+ Projects Completed" — Dwelling Design</span><span class="sep">·</span><span>★ "Member AIA · Boise, Idaho" — Est. 2002</span><span class="sep">·</span><span>★ "Thorough and complete drawings" — Neil N.</span><span class="sep">·</span><span>★ "Tradesmen appreciate his quality designs" — Kristian W.</span><span class="sep">·</span><span>★ "Indispensable combination of design and field experience" — C. Michael B., AIA</span><span class="sep">·</span><span>★ "25+ Years of Excellence · 200+ Projects Completed" — Dwelling Design</span><span class="sep">·</span><span>★ "Member AIA · Boise, Idaho" — Est. 2002</span><span class="sep">·</span>
+</div></div>
 
 <!-- PORTFOLIO -->
 <section class="portfolio" id="portfolio">
@@ -800,7 +834,7 @@ h1,h2,h3,.ttl,.gal-name,.about-quote blockquote,.tq+p,.tt,
 const PROJECTS_DATA = [
 {
   name:"Whitetail Migratory Ridge",
-  loc:"Treasure Valley, Idaho",
+  loc:"McCall, Idaho",
   type:"Residential",
   desc:"Mountaintop Modern home curated to capture views from every space.",
   cover:"pimg_wmr3",
@@ -808,20 +842,19 @@ const PROJECTS_DATA = [
 },
 {
   name:"Whitetail Drive",
-  loc:"Inland Northwest",
+  loc:"McCall, Idaho",
   type:"Residential",
   desc:"Mountain modern dwelling reflected in a private pond, designed for art enthusiasts.",
   cover:"pimg_wd0",
-  photos:[{imgId:"pimg_wd0",cap:"Lakeside reflection \u2014 mountain modern design nestled in fall foliage"},{imgId:"pimg_wd1",cap:"Rear exterior with expansive lawn, covered porch, and meadow grasses"}]
+  photos:[{imgId:"pimg_wd0",cap:"Lakeside reflection \u2014 mountain modern design nestled in fall foliage"},{imgId:"pimg_wd1",cap:"Rear exterior with expansive lawn, covered porch, and meadow grasses"},{imgId:"pimg_wd_coll",cap:"Interior collection \u2014 patio, open concept living, dining, bath, and kitchen"}]
 },
-,
 {
   name:"Terra Nativa",
   loc:"Boise, Idaho",
   type:"Residential",
   desc:"Elegant Mediterranean architecture with modern Spanish influences overlooking downtown Boise.",
   cover:"pimg_ref_h001",
-  photos:[{imgId:"pimg_ref_h001",cap:"Estate aerial with downtown Boise backdrop"},{imgId:"pimg_ref_h011",cap:"Dome tower detail overlooking the city"},{imgId:"pimg_ref_hrender6",cap:""},{imgId:"pimg_ref_lakeview",cap:"Aerial city view with estate below"},{imgId:"pimg_tn3",cap:"Courtyard with stone fountain, arched colonnade, and manicured gardens"},{imgId:"pimg_tn4",cap:"View through arched entry to the fountain courtyard"},{imgId:"pimg_tn5",cap:"Great room with coffered ceiling, exposed beams, and stone fireplace"},{imgId:"pimg_tn6",cap:"Grand dining with curved iron staircase and balcony overlook"},{imgId:"pimg_tn7",cap:"Tower rotunda with hand-laid brick dome and star pendant"}]
+  photos:[{imgId:"pimg_ref_h001",cap:"Estate aerial with downtown Boise backdrop"},{imgId:"pimg_ref_h011",cap:"Dome tower detail overlooking the city"},{imgId:"pimg_ref_lakeview",cap:"Aerial city view with estate below"},{imgId:"pimg_tn3",cap:"Courtyard with stone fountain, arched colonnade, and manicured gardens"},{imgId:"pimg_tn4",cap:"View through arched entry to the fountain courtyard"},{imgId:"pimg_tn5",cap:"Great room with coffered ceiling, exposed beams, and stone fireplace"},{imgId:"pimg_tn6",cap:"Grand dining with curved iron staircase and balcony overlook"},{imgId:"pimg_tn7",cap:"Tower rotunda with hand-laid brick dome and star pendant"}]
 },
 {
   name:"Laguna Point",
@@ -833,19 +866,35 @@ const PROJECTS_DATA = [
 },
 {
   name:"Lakeview",
-  loc:"",
+  loc:"McCall, Idaho",
   type:"Residential",
-  desc:"Custom residential project — details coming soon.",
-  cover:"pimg_veras_main",
-  photos:[{imgId:"pimg_veras_main",cap:""},{imgId:"pimg_veras_lakeview",cap:""},{imgId:"pimg_veras_tsuda",cap:""}]
+  desc:"Set on beautiful Payette Lake with spectacular views.",
+  cover:"pimg_lakeview_new2",
+  photos:[{imgId:"pimg_lakeview_new2",cap:"Lakefront view with private dock and forest surrounds"},{imgId:"pimg_lakeview_new5",cap:"Aerial view of the property on Payette Lake"},{imgId:"pimg_lakeview_new1",cap:"Forest path leading to the residence"},{imgId:"pimg_lakeview_new3",cap:"Cantilevered deck with panoramic mountain views"},{imgId:"pimg_lakeview_new4",cap:"Hillside elevation capturing the natural setting"}]
+},
+{
+  name:"Hackberry Ranch",
+  loc:"Boise, Idaho",
+  type:"Residential",
+  desc:"Modern Prairie design with clean lines and contemporary finishes.",
+  cover:"pimg_hb_coll",
+  photos:[{imgId:"pimg_hb_coll",cap:"Exterior and interior views \u2014 modern prairie design with clean lines and contemporary finishes"}]
+},
+{
+  name:"Hendrickson",
+  loc:"McCall, Idaho",
+  type:"Residential",
+  desc:"Mountain modern retreat with cedar, stone, and expansive glass set in a pine forest.",
+  cover:"pimg_hend1",
+  photos:[{imgId:"pimg_hend1",cap:"Rear exterior with cedar siding, stone base, and covered patio"},{imgId:"pimg_hend2",cap:"Front entry with cedar facade and stone accents"},{imgId:"pimg_hend3",cap:"Aerial view showing the property set against the mountains"},{imgId:"pimg_hend4",cap:"Side elevation with dual garage and stone detailing"},{imgId:"pimg_hend5",cap:"Great room with vaulted wood ceiling, stone fireplace, and forest views"},{imgId:"pimg_hend6",cap:"Dining and living area with floor-to-ceiling windows"},{imgId:"pimg_hend7",cap:"Kitchen with custom island, pendant lighting, and wood beam ceiling"},{imgId:"pimg_hend8",cap:"Powder bath with hand-laid tile and custom vanity"}]
 },
 {
   name:"Renderings",
   loc:"",
   type:"Renderings",
-  desc:"Architectural renderings — details coming soon.",
-  cover:"pimg_tuttle",
-  photos:[{imgId:"pimg_tuttle",cap:""},{imgId:"pimg_lot30",cap:""},{imgId:"pimg_dwelling7",cap:""},{imgId:"pimg_dwelling9",cap:""},{imgId:"pimg_kalisek",cap:""},{imgId:"pimg_bungalow",cap:""},{imgId:"pimg_nelson",cap:""},{imgId:"pimg_stark",cap:""}]
+  desc:"Architectural renderings capturing projects before construction.",
+  cover:"pimg_rend_new1",
+  photos:[{imgId:"pimg_rend_new1",cap:"French country residence \u2014 photorealistic rendering"},{imgId:"pimg_rend_coll1",cap:"Concept sketches and early renderings"},{imgId:"pimg_rend_coll2",cap:"Mountain modern and contemporary renderings"},{imgId:"pimg_tuttle",cap:""},{imgId:"pimg_lot30",cap:""},{imgId:"pimg_dwelling7",cap:""},{imgId:"pimg_dwelling9",cap:""},{imgId:"pimg_kalisek",cap:""},{imgId:"pimg_bungalow",cap:""},{imgId:"pimg_nelson",cap:""},{imgId:"pimg_stark",cap:""}]
 }
 ];
 
@@ -1012,6 +1061,22 @@ function toggleMenu() {
 }
 
 function openConsult(e) { e.preventDefault(); document.getElementById('consultModal').classList.add('open'); }
+
+function handleCall(e) {
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  if (isMobile) return; // let tel: link work normally on mobile
+  e.preventDefault();
+  const num = '208-631-1362';
+  const textEl = document.getElementById('callBtnText');
+  const orig = textEl.textContent;
+  navigator.clipboard.writeText(num).then(() => {
+    textEl.textContent = '✓ Copied ' + num;
+    setTimeout(() => { textEl.textContent = orig; }, 2500);
+  }).catch(() => {
+    textEl.textContent = 'Call ' + num;
+    setTimeout(() => { textEl.textContent = orig; }, 2500);
+  });
+}
 
 window.addEventListener('scroll', () => document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 60));
 
