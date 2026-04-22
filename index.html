@@ -98,17 +98,19 @@
 <img id="pimg_hb_coll" src="images/hb-collage.jpg" style="display:none" alt="">
 <img id="pimg_hb_1" src="images/hb-1-front-exterior.jpg" style="display:none" alt="">
 <img id="pimg_hb_2" src="images/hb-2-tv-cabinet.jpg" style="display:none" alt="">
-<img id="pimg_hb_3" src="images/hb-3-wine-kitchen-bath.jpg" style="display:none" alt="">
-<img id="pimg_hb_4" src="images/hb-4-living-room.jpg" style="display:none" alt="">
-<img id="pimg_hb_5" src="images/hb-5-kitchen-island.jpg" style="display:none" alt="">
-<img id="pimg_hb_6" src="images/hb-6-bathroom.jpg" style="display:none" alt="">
-<img id="pimg_hb_7" src="images/hb-7-staircase.jpg" style="display:none" alt="">
-<img id="pimg_hb_8" src="images/hb-8-exterior-side.jpg" style="display:none" alt="">
-<img id="pimg_hb_9" src="images/hb-9-exterior-back.jpg" style="display:none" alt="">
-<img id="pimg_hb_10" src="images/hb-10-exterior-back2.jpg" style="display:none" alt="">
+<img id="pimg_hb_3" src="images/hb-3-wine-closet.jpg" style="display:none" alt="">
+<img id="pimg_hb_4" src="images/hb-4-kitchen-bath.jpg" style="display:none" alt="">
+<img id="pimg_hb_5" src="images/hb-5-living-room.jpg" style="display:none" alt="">
+<img id="pimg_hb_6" src="images/hb-6-kitchen-island.jpg" style="display:none" alt="">
+<img id="pimg_hb_7" src="images/hb-7-bathroom.jpg" style="display:none" alt="">
+<img id="pimg_hb_8" src="images/hb-8-staircase.jpg" style="display:none" alt="">
+<img id="pimg_hb_9" src="images/hb-9-exterior-side.jpg" style="display:none" alt="">
+<img id="pimg_hb_10" src="images/hb-10-exterior-back.jpg" style="display:none" alt="">
+<img id="pimg_hb_11" src="images/hb-11-exterior-back2.jpg" style="display:none" alt="">
 <img id="pimg_rend_coll1" src="images/rendering-collage-1.jpg" style="display:none" alt="">
 <img id="pimg_rend_coll2" src="images/rendering-collage-2.jpg" style="display:none" alt="">
 <img id="pimg_rend_new1" src="images/rendering-new-1.jpg" style="display:none" alt="">
+<img id="pimg_rend_new2" src="images/rendering-new-2.jpg" style="display:none" alt="">
 <!-- WHITETAIL DRIVE INDIVIDUAL TILES -->
 <img id="pimg_wd_1" src="images/wd-1-patio.jpg" style="display:none" alt="">
 <img id="pimg_wd_2" src="images/wd-2-shower.jpg" style="display:none" alt="">
@@ -150,10 +152,11 @@ body{background:var(--white);color:var(--navy);font-family:var(--sans);font-weig
 /* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:16px 56px;transition:all .4s}
 nav.scrolled{background:rgba(17,24,39,.97);backdrop-filter:blur(14px);border-bottom:1px solid var(--bdd)}
-.nav-logo{position:relative;height:96px;width:320px;flex-shrink:0}
-.nav-logo img{position:absolute;top:0;left:0;height:72px;width:auto;transition:opacity .35s}
+.nav-logo{position:relative;height:96px;width:360px;flex-shrink:0;display:flex;align-items:center}
+.nav-logo img{position:absolute;top:50%;left:0;transform:translateY(-50%);height:82px;width:auto;transition:opacity .35s;filter:drop-shadow(0 2px 8px rgba(0,0,0,.4))}
 .nav-logo .logo-dark{opacity:0}
 .nav-logo .logo-light{opacity:1}
+nav.scrolled .nav-logo img{filter:none}
 nav.scrolled .nav-logo .logo-dark{opacity:1}
 nav.scrolled .nav-logo .logo-light{opacity:0}
 .logo-dark{opacity:1}
@@ -223,7 +226,7 @@ nav.scrolled .nav-logo .logo-light{opacity:0}
 /* SHARED */
 section{padding:110px 56px}
 .lbl{font-size:12px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--orange);margin-bottom:16px}
-h2.ttl{font-family:var(--serif);font-size:clamp(34px,4.5vw,60px);font-weight:300;line-height:1.05;color:var(--navy)}
+h2.ttl{font-family:var(--serif);font-size:clamp(40px,5vw,68px);font-weight:300;line-height:1.05;color:var(--navy)}
 h2.ttl em{font-style:italic;color:var(--orange)}
 h2.ttl.lt{color:#fff}
 
@@ -913,7 +916,7 @@ const PROJECTS_DATA = [
   type:"Residential",
   desc:"Modern Prairie design with clean lines and contemporary finishes.",
   cover:"pimg_hb_1",
-  photos:[{imgId:"pimg_hb_1",cap:"Front exterior — modern prairie design"},{imgId:"pimg_hb_9",cap:"Front elevation from the driveway"},{imgId:"pimg_hb_10",cap:"Approach at dusk"},{imgId:"pimg_hb_8",cap:"Side view with landscape"},{imgId:"pimg_hb_4",cap:"Living room with TV feature wall and fireplace"},{imgId:"pimg_hb_5",cap:"Open kitchen with oversized island and custom cabinetry"},{imgId:"pimg_hb_2",cap:"Entertainment cabinet with custom millwork"},{imgId:"pimg_hb_3",cap:"Wine closet, kitchen detail, and primary bath"},{imgId:"pimg_hb_6",cap:"Powder bath with stone wall and wood door"},{imgId:"pimg_hb_7",cap:"Staircase with glass railing and pendant lighting"}]
+  photos:[{imgId:"pimg_hb_1",cap:"Front exterior — modern prairie design"},{imgId:"pimg_hb_10",cap:"Approach from the driveway"},{imgId:"pimg_hb_11",cap:"Alternate front elevation"},{imgId:"pimg_hb_9",cap:"Side view with landscaping"},{imgId:"pimg_hb_5",cap:"Living room with TV feature wall and fireplace"},{imgId:"pimg_hb_6",cap:"Open kitchen with oversized island and custom cabinetry"},{imgId:"pimg_hb_2",cap:"Entertainment cabinet with custom millwork"},{imgId:"pimg_hb_3",cap:"Floor-to-ceiling wine closet"},{imgId:"pimg_hb_4",cap:"Kitchen and primary bath detail"},{imgId:"pimg_hb_7",cap:"Powder bath with stone wall and wood door"},{imgId:"pimg_hb_8",cap:"Staircase with glass railing and pendant lighting"}]
 },
 {
   name:"Hendrickson",
@@ -929,7 +932,7 @@ const PROJECTS_DATA = [
   type:"Renderings",
   desc:"Architectural renderings capturing projects before construction.",
   cover:"pimg_rend_new1",
-  photos:[{imgId:"pimg_rend_new1",cap:"French country residence \u2014 photorealistic rendering"},{imgId:"pimg_rnd_5",cap:"Timber-framed lodge rendering"},{imgId:"pimg_rnd_11",cap:"Mountain modern with cantilevered deck"},{imgId:"pimg_rnd_14",cap:"Library great room with barrel-arch windows"},{imgId:"pimg_rnd_15",cap:"Long cedar and stone residence at dusk"},{imgId:"pimg_rnd_9",cap:"Mountain modern with hot tub terrace"},{imgId:"pimg_rnd_10",cap:"Dusk retreat set into the landscape"},{imgId:"pimg_rnd_12",cap:"Aerial view of residence in its setting"},{imgId:"pimg_rnd_13",cap:"Glass A-frame at dusk"},{imgId:"pimg_rnd_6",cap:"Modern terraced home on hillside"},{imgId:"pimg_rnd_4",cap:"Craftsman-style home SketchUp study"},{imgId:"pimg_rnd_1",cap:"Mediterranean estate sketch"},{imgId:"pimg_rnd_2",cap:"Waterpark tower concept sketch"},{imgId:"pimg_rnd_3",cap:"Mountain lodge conceptual sketch"},{imgId:"pimg_rnd_7",cap:"Contemporary home rendering"},{imgId:"pimg_rnd_8",cap:"Contemporary home alternative rendering"},{imgId:"pimg_tuttle",cap:""},{imgId:"pimg_lot30",cap:""},{imgId:"pimg_dwelling7",cap:""},{imgId:"pimg_dwelling9",cap:""},{imgId:"pimg_kalisek",cap:""},{imgId:"pimg_bungalow",cap:""},{imgId:"pimg_nelson",cap:""},{imgId:"pimg_stark",cap:""}]
+  photos:[{imgId:"pimg_rend_new1",cap:"French country residence \u2014 photorealistic rendering"},{imgId:"pimg_rend_new2",cap:"Modern Boise residence \u2014 photorealistic rendering"},{imgId:"pimg_rnd_5",cap:"Timber-framed lodge rendering"},{imgId:"pimg_rnd_11",cap:"Mountain modern with cantilevered deck"},{imgId:"pimg_rnd_14",cap:"Library great room with barrel-arch windows"},{imgId:"pimg_rnd_15",cap:"Long cedar and stone residence at dusk"},{imgId:"pimg_rnd_9",cap:"Mountain modern with hot tub terrace"},{imgId:"pimg_rnd_10",cap:"Dusk retreat set into the landscape"},{imgId:"pimg_rnd_12",cap:"Aerial view of residence in its setting"},{imgId:"pimg_rnd_13",cap:"Glass A-frame at dusk"},{imgId:"pimg_rnd_6",cap:"Modern terraced home on hillside"},{imgId:"pimg_rnd_4",cap:"Craftsman-style home SketchUp study"},{imgId:"pimg_rnd_1",cap:"Mediterranean estate sketch"},{imgId:"pimg_rnd_2",cap:"Waterpark tower concept sketch"},{imgId:"pimg_rnd_3",cap:"Mountain lodge conceptual sketch"},{imgId:"pimg_rnd_7",cap:"Contemporary home rendering"},{imgId:"pimg_rnd_8",cap:"Contemporary home alternative rendering"},{imgId:"pimg_tuttle",cap:""},{imgId:"pimg_lot30",cap:""},{imgId:"pimg_dwelling7",cap:""},{imgId:"pimg_dwelling9",cap:""},{imgId:"pimg_kalisek",cap:""},{imgId:"pimg_bungalow",cap:""},{imgId:"pimg_nelson",cap:""},{imgId:"pimg_stark",cap:""}]
 }
 ];
 
