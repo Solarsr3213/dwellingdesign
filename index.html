@@ -27,7 +27,7 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": ["Architect", "LocalBusiness"],
   "@id": "https://www.dwellingdesign.net/",
   "name": "Dwelling Design",
   "description": "Custom residential architecture firm in Boise, Idaho specializing in custom homes, remodels, infill homes, and architectural design.",
@@ -35,6 +35,8 @@
   "telephone": "+1-208-429-1946",
   "email": "dwellingdesignboise@gmail.com",
   "foundingDate": "2002",
+  "image": "https://www.dwellingdesign.net/images/hero-new-1.jpg",
+  "logo": "https://www.dwellingdesign.net/images/hero-new-1.jpg",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "300 E 35th St",
@@ -58,11 +60,13 @@
     "https://www.linkedin.com/company/dwelling-design-llc/"
   ],
   "priceRange": "$$$$",
-  "areaServed": {
-    "@type": "State",
-    "name": "Idaho"
-  },
-  "hasMap": "https://www.google.com/maps/place/300+E+35th+St,+Garden+City,+ID+83714"
+  "areaServed": [
+    {"@type": "City", "name": "Boise"},
+    {"@type": "City", "name": "Garden City"},
+    {"@type": "City", "name": "Eagle"},
+    {"@type": "City", "name": "Meridian"}
+  ],
+  "hasMap": "https://www.google.com/maps/search/?api=1&query=Dwelling+Design+Garden+City+Idaho"
 }
 </script>
 
